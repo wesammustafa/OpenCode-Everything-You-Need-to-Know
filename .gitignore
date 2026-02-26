@@ -1,0 +1,148 @@
+# OpenCode Everything You Need to Know - .gitignore
+# This file specifies intentionally untracked files that Git should ignore
+
+# ==================== SYSTEM FILES ====================
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux temporary files
+*~
+*.swp
+*.swo
+
+# ==================== EDITOR/IDE FILES ====================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Other editors
+.project
+.classpath
+.settings/
+
+# ==================== OPENCODE RUNTIME FILES ====================
+# OpenCode configuration and runtime files (user-specific)
+.opencode/node_modules/
+.opencode/package.json
+.opencode/bun.lock
+.opencode/.gitignore
+.opencode/cache/
+.opencode/logs/
+.opencode/sessions/
+.opencode/config.local.json
+.opencode/state.json
+.opencode/agents/
+.opencode/commands/
+.opencode/skills/
+
+# ==================== DEPENDENCIES ====================
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+bun.lock
+
+# ==================== BUILD OUTPUTS ====================
+# Documentation build outputs
+docs/_build/
+docs/_site/
+docs/_out/
+
+# General build outputs
+dist/
+build/
+.out/
+.next/
+.nuxt/
+
+# ==================== ENVIRONMENT FILES ====================
+# Environment variables (never commit secrets!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ==================== TEMPORARY FILES ====================
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# ==================== LOGS ====================
+# Log files
+*.log
+logs/
+.opencode/logs/
+
+# ==================== COVERAGE REPORTS ====================
+# Test coverage
+coverage/
+.nyc_output
+*.lcov
+
+# ==================== OS-SPECIFIC IGNORES ====================
+# Network files
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ==================== PROJECT-SPECIFIC ====================
+# Example projects dependencies
+examples/*/node_modules
+examples/*/package-lock.json
+examples/*/yarn.lock
+examples/*/bun.lock
+
+# Plugin development
+plugins/*/node_modules
+plugins/*/dist
+plugins/*/build
+
+# MCP server development
+mcp-servers/*/node_modules
+mcp-servers/*/dist
+mcp-servers/*/build
+
+# Image processing cache
+Images/.DS_Store
+Images/thumbnails/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# ==================== PERSONAL WORKSPACE ====================
+# Personal workspace files (optional - comment out if you want to track these)
+# .workspace/
+# personal-notes.md
+# todo.md
