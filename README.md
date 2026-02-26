@@ -8,13 +8,14 @@
 
 If you're coming from **Claude Code**, **Cursor**, or **GitHub Copilot**, OpenCode offers something fundamentally different:
 
-| Feature | OpenCode | Claude Code | Cursor | GitHub Copilot |
-|---------|----------|-------------|--------|----------------|
-| **Model Flexibility** | 75+ providers | Claude only | Limited | GitHub models |
-| **Pricing** | Pay-as-you-go | $20/month | $20/month | $10/month |
-| **Terminal Native** | ✅ Built for terminal | ❌ Desktop app | ❌ Desktop app | ❌ IDE plugin |
-| **Open Source** | ✅ Full control | ❌ Proprietary | ❌ Proprietary | ❌ Proprietary |
-| **Customization** | Unlimited skills/agents | Limited | Limited | Very limited |
+| Feature                 | OpenCode (CLI ecosystem)                           | Claude Code                          | Cursor                               | GitHub Copilot                               |
+| ----------------------- | -------------------------------------------------- | ------------------------------------ | ------------------------------------ | -------------------------------------------- |
+| **Model Flexibility**   | Multi-provider (OpenAI, Anthropic, DeepSeek, etc.) | Primarily Anthropic (Claude models)  | Multi-provider (plan dependent)      | Multi-provider (GitHub-managed)              |
+| **Pricing Model**       | Pay-as-you-go (API usage based)                    | Subscription (e.g., Claude Pro tier) | Subscription (Pro tiers)             | Subscription (Individual / Business tiers)   |
+| **Primary Interface**   | Terminal-native (CLI-first)                        | Web app + integrations               | Desktop editor (VS Code fork)        | IDE extension (VS Code, JetBrains, etc.)     |
+| **Open Source**         | open-source                             | Proprietary                          | Proprietary                          | Proprietary                                  |
+| **Customization** | High (config files, agents, workflows)             | Moderate (prompt & tool configs)     | High (rules, modes, project context) | Low–Moderate (custom instructions, policies) |
+| **Target User**         | Power users / terminal-heavy devs                  | Claude-centric users                 | Full IDE AI workflow users           | Mainstream IDE users                         |
 
 ### The OpenCode Advantage:
 - **No vendor lock-in**: Use OpenAI, Anthropic, Google, local models, or all of them
@@ -237,10 +238,10 @@ tools: ["read", "write", "bash"]
 - Conversation history
 
 **What's different:**
-- **Model flexibility**: Use any model, not just Claude
-- **Pricing**: Pay-as-you-go vs $20/month subscription
-- **Workflow**: Terminal-native vs desktop app
-- **Customization**: Unlimited skills vs limited features
+- **Model flexibility**: Multi-provider vs Claude-only
+- **Pricing model**: Pay-as-you-go vs subscription
+- **Primary interface**: Terminal-native vs desktop app
+- **Customization depth**: High vs limited features
 
 **Migration steps:**
 1. Install OpenCode and set up Zen
@@ -447,6 +448,12 @@ source ~/.bashrc
 # Use /compact to summarize long conversations
 /compact
 ```
+
+**Q: Images not displaying in OpenCode's TUI**
+OpenCode's TUI is text-based and doesn't display images inline. Image links appear as markdown text.
+- For local markdown preview tools (VS Code, Obsidian, etc.), use relative paths: `[![OpenCode](./Images/opencode.png)](https://opencode.ai)`
+- If that doesn't work, try absolute path from repo root: `[![OpenCode](/Images/opencode.png)](https://opencode.ai)`
+- For public repositories, use full GitHub URLs: `[![OpenCode](https://raw.githubusercontent.com/user/repo/main/Images/opencode.png)](https://opencode.ai)`
 
 **[❓ Full FAQ & Troubleshooting](docs/FAQ-TROUBLESHOOTING.md)**
 
