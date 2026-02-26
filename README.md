@@ -492,14 +492,6 @@ source ~/.bashrc
 
 OpenCode is open-source software licensed under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
-
-- Built by [Anomaly](https://anomaly.co)
-- Powered by the open-source community
-- Thanks to all contributors and users
-
----
-
 *Last updated: February 2026*  
 *For the best reading experience, install [Obsidian](https://obsidian.md/) to view these documents.*
 
